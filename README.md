@@ -1,25 +1,24 @@
-# lista_de_borboletas.py
+#include <stdio.h>
 
-class Borboleta:
-    def __init__(self, nome, especie, cor):
-        self.nome = nome
-        self.especie = especie
-        self.cor = cor
-
-    def mostrar_info(self):
-        return f"{self.nome} é uma borboleta da espécie {self.especie} e sua cor é {self.cor}."
-
-
-def main():
-    borboletas = [
-        Borboleta("Monarca", "Danaus plexippus", "laranja e preto"),
-        Borboleta("Cecropia", "Hyalophora cecropia", "vermelho e amarelo"),
-        Borboleta("Azul", "Ithomia", "azul"),
-    ]
-
-    for borboleta in borboletas:
-        print(borboleta.mostrar_info())
-
-
-if __name__ == "__main__":
-    main()
+int main() {
+    printf("Informações sobre Baleias:\n");
+    
+    printf("Nome: Baleia Azul\n");
+    printf("Espécie: Balaenoptera musculus\n");
+    printf("Tamanho: 30.0 metros\n");
+    printf("Habitat: Oceano\n");
+    printf("-------------------------------\n");
+    
+    printf("Nome: Baleia Jubarte\n");
+    printf("Espécie: Megaptera novaeangliae\n");
+    printf("Tamanho: 15.0 metros\n");
+    printf("Habitat: Oceano\n");
+    printf("-------------------------------\n");
+    
+    printf("Nome: Baleia Franca\n");
+    printf("Espécie: Eubalaena australis\n");
+    printf("Tamanho: 16.0 metros\n");
+    printf("Habitat: Oceano\n");
+    
+    return 0;
+}
